@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/theme_bg"
+    android:orientation="vertical"
+    tools:context=".user_MyProfile_Fragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/profile_image"
+            android:layout_width="96dp"
+            android:layout_height="96dp"
+            android:src="@drawable/profile"
+            app:civ_border_width="2dp"
+            app:civ_border_color="#FF000000"
+            android:layout_marginBottom="10dp" />
+
+        <!-- USERNAME -->
+
+        <TextView
+            android:id="@+id/userprofileName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="11dp"
+            android:gravity="center"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:textColor="#0A1032"
+            android:text="Hi "
+            android:layout_marginRight="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginBottom="10dp" />
+
+        <!--UPDATE PROFILE-->
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/bluegreen"
+            android:textAllCaps="true"
+            android:textStyle="bold"
+            android:textSize="18dp"
+            android:text="update profile"
+            android:padding="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginBottom="10dp"
+            android:id="@+id/btn_updateProfile" />
+        <!--MY ORDERS-->
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/bluegreen"
+            android:textAllCaps="true"
+            android:textStyle="bold"
+            android:textSize="18dp"
+            android:text="my orders"
+            android:padding="10dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginBottom="10dp"
+            android:id="@+id/btn_myOrders" />
+        <!-- feedback-->
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/bluegreen"
+            android:textAllCaps="true"
+            android:textStyle="bold"
+            android:textSize="18dp"
+            android:text="feedback"
+            android:padding="10dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginBottom="10dp"
+            android:id="@+id/btn_feedback" />
+        <!--LOGOUT-->
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/bluegreen"
+            android:textAllCaps="true"
+            android:textStyle="bold"
+            android:textSize="18dp"
+            android:text="logout"
+            android:padding="10dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginBottom="10dp"
+            android:id="@+id/btn_logout" />
+
+        <!--   <TextView
+               android:layout_marginTop="10dp"
+               android:id="@+id/Help"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_gravity="center"
+               android:text="Help and Support"
+               android:textSize="17dp"
+               android:textColor="@color/white"/>-->
+
+        <!--<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:gravity="center"
+            android:text="UPDATE PROFILE"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:textColor="@color/black"/>
+        &lt;!&ndash; FULL NAME &ndash;&gt;
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginBottom="10dp">
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="Full Name"
+                android:outlineAmbientShadowColor="@color/black"
+                android:textColorHint="@color/white">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/newName"
+                    android:textColor="@color/white"/>
+            </com.google.android.material.textfield.TextInputLayout>
+        </LinearLayout>
+        &lt;!&ndash; UPDATE EMAIL ID &ndash;&gt;
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp">
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="Email id"
+                android:textColorHint="@color/white">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:inputType="textEmailAddress"
+                    android:id="@+id/newEmail"
+                    android:textColor="@color/white"/>
+            </com.google.android.material.textfield.TextInputLayout>
+        </LinearLayout>
+
+        &lt;!&ndash; UPDATE CONTACT NO &ndash;&gt;
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp">
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="Contact Number"
+                android:textColorHint="@color/white">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:inputType="phone"
+                    android:id="@+id/newContact"
+                    android:textColor="@color/white"/>
+            </com.google.android.material.textfield.TextInputLayout>
+        </LinearLayout>
+
+        &lt;!&ndash; UPDATE PASSWORD &ndash;&gt;
+        <TextView
+            android:id="@+id/updatePwd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:textColor="@color/white"
+            android:text="UPDATE PASSWORD"/>
+        &lt;!&ndash; UPDATE BTN &ndash;&gt;
+        <Button
+            android:id="@+id/updatebtn"
+            android:layout_width="300dp"
+            android:layout_height="66dp"
+            android:layout_marginTop="30dp"
+            android:layout_gravity="center"
+            android:backgroundTint="@color/summersky"
+            android:textSize="19dp"
+            android:text="UPDATE"/>
+        <TextView
+            android:layout_marginTop="10dp"
+            android:id="@+id/Help"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Help and Support"
+            android:textSize="17dp"
+            android:textColor="@color/white"/>
+        <ImageView
+            android:id="@+id/imgLogout"
+            android:layout_width="35dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="7dp"
+            android:layout_marginRight="9dp"
+            android:layout_gravity="right"
+            android:src="@drawable/user_logout_icon"/>
+</LinearLayout>-->
+
+    </LinearLayout>
+</FrameLayout>

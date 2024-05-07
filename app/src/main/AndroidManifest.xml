@@ -1,0 +1,432 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:enableOnBackInvokedCallback="true"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/icon"
+        android:label="@string/app_name"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:roundIcon="@mipmap/icon"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Auton"
+        android:usesCleartextTraffic="true"
+        tools:targetApi="31">
+        <activity
+            android:name=".viewFeedback"
+            android:exported="false" />
+        <activity
+            android:name=".feedback"
+            android:exported="false" />
+        <activity
+            android:name=".admin_viewPurchaseHistory"
+            android:exported="false" />
+        <activity
+            android:name=".admin_viewBookedService"
+            android:exported="false" />
+        <activity
+            android:name=".user_Delete_Service"
+            android:exported="false" />
+        <activity
+            android:name=".admin_DeleteWorkshop"
+            android:exported="false" />
+        <activity
+            android:name=".mechanic_HomePage"
+            android:exported="false" />
+        <activity
+            android:name=".workshop_UpdateProfile"
+            android:exported="false" />
+        <activity
+            android:name=".user_orderHistory"
+            android:exported="false" />
+        <activity
+            android:name=".user_updateProfile"
+            android:exported="false" />
+        <activity
+            android:name=".admin_view_Mechanics"
+            android:exported="false" />
+        <activity
+            android:name=".fulldetails_Chargers"
+            android:exported="false" />
+        <activity
+            android:name=".fulldetails_HID"
+            android:exported="false" />
+        <activity
+            android:name=".fulldetails_Projectors"
+            android:exported="false" />
+        <activity
+            android:name=".fulldetails_MobileHolder"
+            android:exported="false" />
+        <activity
+            android:name=".user_view_LightsChargers"
+            android:exported="false" />
+        <activity
+            android:name=".fulldetails_TyreInflator"
+            android:exported="false" />
+        <activity
+            android:name=".fulldetails_Toolkit"
+            android:exported="false" />
+        <activity
+            android:name=".user_view_RoadsideAssistance"
+            android:exported="false" />
+        <activity
+            android:name=".fulldetails_Horns"
+            android:exported="false" />
+        <activity
+            android:name=".fulldetails_Protectives"
+            android:exported="false" />
+        <activity
+            android:name=".user_view_HornsProtectives"
+            android:exported="false" />
+        <activity
+            android:name=".admin_add_MobileHolder"
+            android:exported="false" />
+        <activity
+            android:name=".admin_add_Chargers"
+            android:exported="false" />
+        <activity
+            android:name=".admin_add_Projectors"
+            android:exported="false" />
+        <activity
+            android:name=".admin_add_HID"
+            android:exported="false" />
+        <activity
+            android:name=".admin_add_Protectives"
+            android:exported="false" />
+        <activity
+            android:name=".admin_add_Horns"
+            android:exported="false" />
+        <activity
+            android:name=".admin_add_Toolkits"
+            android:exported="false" />
+        <activity
+            android:name=".admin_add_TyreInflator"
+            android:exported="false" />
+        <activity
+            android:name=".admin_add_RoadsideAssistance"
+            android:exported="false" />
+        <activity
+            android:name=".admin_add_LightsChargers"
+            android:exported="false" />
+        <activity
+            android:name=".admin_add_HornsProtectives"
+            android:exported="false" />
+        <activity
+            android:name=".fulldetails_Mats"
+            android:exported="false" />
+        <activity
+            android:name=".fulldetails_NeckCushions"
+            android:exported="false" />
+        <activity
+            android:name=".fulldetails_BackCushions"
+            android:exported="false" />
+        <activity
+            android:name=".fulldetails_AirFreshner"
+            android:exported="false" />
+        <activity
+            android:name=".user_View_FloormatsCushions"
+            android:exported="false" />
+        <activity
+            android:name=".admin_add_NeckCushions"
+            android:exported="false" />
+        <activity
+            android:name=".admin_add_Mats"
+            android:exported="false" />
+        <activity
+            android:name=".admin_add_BackCushions"
+            android:exported="false" />
+        <activity
+            android:name=".admin_add_AirFreshner"
+            android:exported="false" />
+        <activity
+            android:name=".admin_add_FloormatsCushions"
+            android:exported="false" />
+        <activity
+            android:name=".user_view_CarInspection"
+            android:exported="false" />
+        <activity
+            android:name=".user_view_CarspaCleaning"
+            android:exported="false" />
+        <activity
+            android:name=".user_view_DetailingService"
+            android:exported="false" />
+        <activity
+            android:name=".user_view_DentingPainting"
+            android:exported="false" />
+        <activity
+            android:name=".user_view_TyresWheelcare"
+            android:exported="false" />
+        <activity
+            android:name=".user_view_Batteries"
+            android:exported="false" />
+        <activity
+            android:name=".user_BookService2"
+            android:exported="false" />
+        <activity
+            android:name=".admin_add_CarInspections"
+            android:exported="false" />
+        <activity
+            android:name=".admin_add_CarspaCleaning"
+            android:exported="false" />
+        <activity
+            android:name=".admin_add_DetailingService"
+            android:exported="false" />
+        <activity
+            android:name=".admin_add_DentingPainting"
+            android:exported="false" />
+        <activity
+            android:name=".user_view_ACServiceRepair"
+            android:exported="false" />
+        <activity
+            android:name=".user_View_PeriodicService"
+            android:exported="false" />
+        <activity
+            android:name=".admin_add_TyresWheelcare"
+            android:exported="false" />
+        <activity
+            android:name=".fulldetails_WiperBlades"
+            android:exported="false" />
+        <activity
+            android:name=".fulldetails_Washers"
+            android:exported="false" />
+        <activity
+            android:name=".fulldetails_Microfiber"
+            android:exported="false" />
+        <activity
+            android:name=".fulldetails_Detailing"
+            android:exported="false" />
+        <activity
+            android:name=".fulldetails_cleansers"
+            android:exported="false" />
+        <activity
+            android:name=".fulldetails_CleaningKit"
+            android:exported="false" />
+        <activity
+            android:name=".fulldetails_AirPurifier"
+            android:exported="false" />
+        <activity
+            android:name=".admin_add_Batteries"
+            android:exported="false" />
+        <activity
+            android:name=".admin_add_ACserviceRepair"
+            android:exported="false" />
+        <activity
+            android:name=".admin_add_PeriodicService"
+            android:exported="false" />
+        <activity
+            android:name=".user_Select_Service_Type"
+            android:exported="false" />
+        <activity
+            android:name=".admin_AddService"
+            android:exported="false" />
+        <activity
+            android:name=".admin_AddBodyType"
+            android:exported="false" />
+        <activity
+            android:name=".admin_mainactivity"
+            android:exported="false" />
+        <activity
+            android:name=".admin_AddCars"
+            android:exported="false" />
+
+        <receiver
+            android:name="com.razorpay.RzpTokenReceiver"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="rzp.device_token.share" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name="com.razorpay.CheckoutActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:theme="@style/CheckoutTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <data
+                    android:host="rzp.io"
+                    android:scheme="io.rzp" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".RazorPay"
+            android:exported="false" />
+        <activity
+            android:name=".user_View_Carecare_Purifiers"
+            android:exported="false" />
+        <activity
+            android:name=".admin_add_Washers"
+            android:exported="false" />
+        <activity
+            android:name=".admin_add_Detailing"
+            android:exported="false" />
+        <activity
+            android:name=".admin_add_Cleansers"
+            android:exported="false" />
+        <activity
+            android:name=".admin_add_WiperBlades"
+            android:exported="false" />
+        <activity
+            android:name=".fulldetails_VacuumCleaners"
+            android:exported="false" />
+        <activity
+            android:name=".fulldetails_Speaker"
+            android:exported="false" />
+        <activity
+            android:name=".fulldetails_AndroidScreen"
+            android:exported="false" />
+        <activity
+            android:name=".fulldetails_Amplifier"
+            android:exported="false" />
+        <activity
+            android:name=".fulldetails_Basstubes"
+            android:exported="false" />
+
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+
+        <activity
+            android:name=".user_View_Booked_Service"
+            android:exported="false" />
+        <activity
+            android:name=".admin_add_MicroFibres"
+            android:exported="false" />
+        <activity
+            android:name=".admin_add_CleaningKit"
+            android:exported="false" />
+        <activity
+            android:name=".admin_add_AirPurifier"
+            android:exported="false" />
+        <activity
+            android:name=".admin_add_Amplifiers"
+            android:exported="false" />
+        <activity
+            android:name=".admin_add_VacuumCleaners"
+            android:exported="false" />
+        <activity
+            android:name=".admin_add_Speakers"
+            android:exported="false" />
+        <activity
+            android:name=".user_View_Screens_Speakers"
+            android:exported="false" />
+        <activity
+            android:name=".admin_add_Carcare_Purifier"
+            android:exported="false" />
+        <activity
+            android:name=".admin_add_BassTubes"
+            android:exported="false" />
+        <activity
+            android:name=".admin_add_ScreenSpeaker"
+            android:exported="false" />
+        <activity
+            android:name=".admin_add_AndroidScreen"
+            android:exported="false" />
+        <!--
+             TODO: Before you run your application, you need a Google Maps API key.
+
+             To get one, follow the directions here:
+
+                https://developers.google.com/maps/documentation/android-sdk/get-api-key
+
+             Once you have your API key (it starts with "AIza"), define a new property in your
+             project's local.properties file (e.g. MAPS_API_KEY=Aiza...), and replace the
+             "YOUR_API_KEY" string in this file with "${MAPS_API_KEY}".
+        -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyD1fv0PFvzXQizpdj2Z6hLjVnfiNL8SPhU" />
+
+        <activity
+            android:name=".MapsActivity2"
+            android:exported="false"
+            android:label="@string/title_activity_maps2" />
+        <activity
+            android:name=".MapsActivity_Workshop"
+            android:exported="false"
+            android:label="@string/title_activity_maps2" />
+        <activity
+            android:name=".MapsActivity"
+            android:exported="false"
+            android:label="@string/title_activity_maps" />
+        <activity
+            android:name=".user_View_Service"
+            android:exported="false" />
+        <activity
+            android:name=".workshop_Mechanic_layout"
+            android:exported="false" />
+        <activity
+            android:name=".workshop_View_Mechanic"
+            android:exported="false" />
+        <activity
+            android:name=".workshop_AddMechanic"
+            android:exported="false" />
+        <activity
+            android:name=".workshop_Update_passwd"
+            android:exported="false" />
+        <activity
+            android:name=".admin_User_Layout"
+            android:exported="false" />
+        <activity
+            android:name=".admin_View_Users"
+            android:exported="false" />
+        <activity
+            android:name=".admin_Add_Workshop"
+            android:exported="false" />
+        <activity
+            android:name=".admin_HomePage"
+            android:exported="false" />
+        <activity
+            android:name=".workshop_HomePage"
+            android:exported="false" />
+        <activity
+            android:name=".user_Book_Service"
+            android:exported="false" />
+        <activity
+            android:name=".user_Update_Password"
+            android:exported="false" />
+        <activity
+            android:name=".user_HomePage"
+            android:exported="false" />
+        <activity
+            android:name=".workshop_Login"
+            android:exported="false" />
+        <activity
+            android:name=".user_Login"
+            android:exported="false" />
+        <activity
+            android:name=".worker_Registration"
+            android:exported="false" />
+        <activity
+            android:name=".splashScreen"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".user_Registration"
+            android:exported="true" />
+        <activity
+            android:name=".starting_page"
+            android:exported="true" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true" />
+    </application>
+
+</manifest>

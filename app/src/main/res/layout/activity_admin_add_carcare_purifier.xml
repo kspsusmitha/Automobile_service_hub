@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="@drawable/theme_bg"
+    android:orientation="vertical"
+    tools:context=".admin_add_Carcare_Purifier">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textAllCaps="true"
+        android:textColor="@color/white"
+        android:text="admin add care care &amp; purifiers"
+        android:textSize="24dp"
+        android:layout_marginBottom="10dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_margin="5dp"
+        android:weightSum="2"
+        android:orientation="horizontal">
+        <!-- AIR PURIFIER-->
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="@color/summersky"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:text="AIR PURIFIER"
+            android:id="@+id/btn_AirPurifiers" />
+        <!--        CLEANING KITS-->
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/summersky"
+            android:textColor="@color/white"
+            android:layout_weight="1"
+            android:textStyle="bold"
+            android:text="CLEANING KITS"
+            android:id="@+id/btn_CleaningKits" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_margin="5dp"
+        android:weightSum="2"
+        android:orientation="horizontal">
+        <!-- MICROFIBER-->
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="@color/summersky"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:text="MICROFIBER"
+            android:id="@+id/btn_Microfibers" />
+        <!--   WIPERS BLADE-->
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="@color/summersky"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:text="WIPERS BLADE"
+            android:id="@+id/btn_WiperBlades" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_margin="5dp"
+        android:weightSum="2"
+        android:orientation="horizontal">
+        <!-- CLEANSERS-->
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="@color/summersky"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:text="CLEANSERS"
+            android:id="@+id/btn_Cleaners" />
+        <!--   WASHERS-->
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="@color/summersky"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:text="WASHERS"
+            android:id="@+id/btn_Washers" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_margin="5dp"
+        android:weightSum="1"
+        android:orientation="horizontal">
+        <!-- DETAILING-->
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="@color/summersky"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:text="DETAILING"
+            android:id="@+id/btn_Detailing" />
+
+    </LinearLayout>
+
+
+</LinearLayout>
